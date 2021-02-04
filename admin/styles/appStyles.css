@@ -1,0 +1,198 @@
+.page-container {
+    padding: 0 15px;
+}
+.md-content.md-theme-default {
+    height: auto !important; 
+}
+.md-tab {
+    padding: 0 16px 16px;
+}
+.md-tab > .md-layout.md-gutter {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 15px 0;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.md-checkbox {
+    margin-top: 0;
+}
+.prefix-input {
+    display: inherit;
+    float: left;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.guide_block {
+    color: #9b9696;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 19px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input[type="number"].form-control {
+    width:80px;
+    float: left;
+}
+select.form-control {
+    max-width:250px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+textarea.form-control {
+    min-height: 100px;
+}
+.jscolor.form-control {
+    max-width: 80px;
+}
+.md-menu-content.md-select-menu {
+    z-index: 99;
+}
+.inputColor{
+    width: 34px;
+    height: 34px !important;
+    padding: 0 !important;
+    border: none;
+    background: none;
+}
+.md-table .md-table-content {
+    overflow: visible;
+}
+.chooseIcons > .md-layout-item, .chooseImages > .md-layout-item {
+    text-align: center;
+    min-height: 90px;
+}
+.chooseFrames .md-radio {
+    margin: 16px 0;
+    min-height: 50px;
+}
+.chooseFrames .md-radio .md-radio-container {
+    top: 50%;
+}
+.chooseIcons .md-ripple,.chooseImages .md-ripple,.chooseIcons .md-checkbox-container,.chooseImages .md-checkbox-container {
+    display: none;
+}
+.chooseIcons .md-checkbox-label,.chooseImages .md-checkbox-label {
+    margin: 0;
+}
+.chooseImages .md-checkbox-label {
+    border: 1px solid transparent;
+    height: auto;
+    padding: 0;
+}
+.chooseIcons .md-checkbox-label .fa {
+    font-size: 40px;
+}
+.chooseIcons .md-checkbox-label:hover,.chooseIcons .md-checked .md-checkbox-label {
+    color: rgba(255,64,129,0.87);
+}
+.chooseImages .md-checkbox-label:hover,.chooseImages .md-checked .md-checkbox-label {
+    border: 1px solid rgba(255,64,129,0.87);
+    color: rgba(255,64,129,0.87);
+}
+.chooseImages img {
+    max-width: 60%;
+}
+.chooseFrames img {
+    max-width: 90%;
+}
+.chooseFrames .md-radio .md-radio-label {
+    height: auto;
+}
+.md-dialog {
+    -webkit-font-smoothing: antialiased;
+    -webkit-filter: blur(0.00001px);
+    filter: blur(0.00001px);
+    overflow-y: scroll;
+}
+#event-dialog {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height:100%;
+}
+#event-dialog h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+#images-dialog {
+    width: 100%;
+    max-height:100%;
+    max-width: 1170px;
+}
+.undo {
+    cursor: pointer;
+    color: rgba(255,64,129,0.87);
+}
+.app-footer {
+    text-align: center;
+}
+.footer-header {
+    margin: 10px 0 15px 0;
+}
+.footer-header img {
+    width: 100%;
+}
+.omg-more-app {
+    max-width:975px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.omg-more-app > div {
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+}
+.footer-copyright {
+    margin-top: 15px;
+}
+hr {
+    margin: 0;
+}
+p.noteWrap {
+    border: 2px solid rgb(255, 64, 129);
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;	
+}
+p.noteWrap a.closeNote {
+    float:right;
+}
+
+@media(max-width: 767px) {
+    p.noteWrap {
+        border: 2px solid rgb(63, 114, 155);
+        border-radius: 26px;
+        font-size: 10px;
+        margin: 1px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+}
+
+@media(max-width: 568px) {
+    .omg-more-app > div {
+        width: 50%;
+    }
+}

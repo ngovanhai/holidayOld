@@ -1,0 +1,102 @@
+const rootLink = window.rootLink
+Vue.use(VueMaterial.default);
+Vue.use(Buefy.default);
+new Vue({
+    el: '#holidayEffectApp',
+    data: function () {
+        return {
+            chooseIcons: [
+                { id: 'beer', class: 'fa fa-beer' },
+                { id: 'bell', class: 'fa fa-bell' },
+                { id: 'birthday-cake', class: 'fa fa-birthday-cake' },
+                { id: 'bolt', class: 'fa fa-bolt' },
+                { id: 'bomb', class: 'fa fa-bomb' },
+                { id: 'clock-o', class: 'fa fa-clock-o' },
+                { id: 'cloud', class: 'fa fa-cloud' },
+                { id: 'envelope', class: 'fa fa-envelope' },
+                { id: 'envelope-open', class: 'fa fa-envelope-open' },
+                { id: 'fire', class: 'fa fa-fire' },
+                { id: 'flag', class: 'fa fa-flag' },
+                { id: 'gift', class: 'fa fa-gift' },
+                { id: 'leaf', class: 'fa fa-leaf' },
+                { id: 'tree', class: 'fa fa-tree' },
+                { id: 'trophy', class: 'fa fa-trophy' },
+                { id: 'snowflake-o', class: 'fa fa-snowflake-o' }
+            ],
+            chooseImages: [
+                { id: 'ball-1', image: 'assets/images/images/ball-1.png' },
+                { id: 'ball-2', image: 'assets/images/images/ball-2.png' },
+                { id: 'ball-3', image: 'assets/images/images/ball-3.png' },
+                { id: 'ball-4', image: 'assets/images/images/ball-4.png' },
+                { id: 'ball-5', image: 'assets/images/images/ball-5.png' },
+                { id: 'ball-6', image: 'assets/images/images/ball-6.png' },
+                { id: 'ball-7', image: 'assets/images/images/ball-7.png' },
+                { id: 'ball-8', image: 'assets/images/images/ball-8.png' },
+                { id: 'ball-9', image: 'assets/images/images/ball-9.png' },
+                { id: 'patrick-1', image: 'assets/images/images/patrick-1.png' },
+                { id: 'patrick-2', image: 'assets/images/images/patrick-2.png' },
+                { id: 'patrick-3', image: 'assets/images/images/patrick-3.png' },
+                { id: 'easter-1', image: 'assets/images/images/easter-1.png' },
+                { id: 'easter-2', image: 'assets/images/images/easter-2.png' },
+                { id: 'easter-3', image: 'assets/images/images/easter-3.png' },
+                { id: 'easter-4', image: 'assets/images/images/easter-4.png' },
+                { id: 'easter-5', image: 'assets/images/images/easter-5.png' },
+                { id: 'easter-6', image: 'assets/images/images/easter-6.png' },
+                { id: 'easter-7', image: 'assets/images/images/easter-7.png' },
+                { id: 'easter-8', image: 'assets/images/images/easter-8.png' },
+                { id: 'easter-9', image: 'assets/images/images/easter-9.png' },
+                { id: 'heart-1', image: 'assets/images/images/heart-1.png' },
+                { id: 'heart-2', image: 'assets/images/images/heart-2.png' },
+                { id: 'heart-3', image: 'assets/images/images/heart-3.png' },
+                { id: 'heart-4', image: 'assets/images/images/heart-4.png' },
+            ],
+            booktakeImages: [
+                { id: 'ibg.common.titledetail', image: 'assets/images/images/booktake/ibg.common.titledetail.png' },
+                { id: 'ibg.common.titledetail(1)', image: 'assets/images/images/booktake/ibg.common.titledetail(1).png' },
+                { id: 'ibg.common.titledetail(2)', image: 'assets/images/images/booktake/ibg.common.titledetail(2).png' },
+                { id: 'ibg.common.titledetail(3)', image: 'assets/images/images/booktake/ibg.common.titledetail(3).png' },
+                { id: 'ibg.common.titledetail(4)', image: 'assets/images/images/booktake/ibg.common.titledetail(4).png' },
+                { id: 'ibg.common.titledetail(5)', image: 'assets/images/images/booktake/ibg.common.titledetail(5).png' },
+                { id: 'ibg.common.titledetail(6)', image: 'assets/images/images/booktake/ibg.common.titledetail(6).png' },
+                { id: 'ibg.common.titledetail(7)', image: 'assets/images/images/booktake/ibg.common.titledetail(7).png' },
+                { id: 'ibg.common.titledetail(8)', image: 'assets/images/images/booktake/ibg.common.titledetail(8).png' },
+                { id: 'ibg.common.titledetail(9)', image: 'assets/images/images/booktake/ibg.common.titledetail(9).png' },
+                { id: 'ibg.common.titledetail(10)', image: 'assets/images/images/booktake/ibg.common.titledetail(10).png' },
+                { id: 'ibg.common.titledetail(11)', image: 'assets/images/images/booktake/ibg.common.titledetail(11).png' },
+                { id: 'ibg.common.titledetail(12)', image: 'assets/images/images/booktake/ibg.common.titledetail(12).png' },
+                { id: 'ibg.common.titledetail(13)', image: 'assets/images/images/booktake/ibg.common.titledetail(13).png' },
+                { id: 'ing', image: 'assets/images/images/booktake/ing.png' },
+                { id: 'ing1', image: 'assets/images/images/booktake/ing1.png' },
+                { id: 'ing2', image: 'assets/images/images/booktake/ing2.png' },
+                { id: 'ing3', image: 'assets/images/images/booktake/ing3.png' },
+                { id: 'ing4', image: 'assets/images/images/booktake/ing4.png' },
+                { id: 'ing5', image: 'assets/images/images/booktake/ing5.png' },
+                { id: 'ing6', image: 'assets/images/images/booktake/ing6.png' },
+                { id: 'ing7', image: 'assets/images/images/booktake/ing7.png' },
+                { id: 'ing8', image: 'assets/images/images/booktake/ing8.png' },
+                { id: 'ing9', image: 'assets/images/images/booktake/ing9.png' },
+            ],
+            chooseFrames: [
+                { id: 'light-1', image: 'assets/images/frames/light-1.png' },
+                { id: 'new-year-1', image: 'assets/images/frames/new-year-1.png' },
+                { id: 'new-year-2', image: 'assets/images/frames/new-year-2.png' },
+                { id: 'easter-1', image: 'assets/images/frames/easter-1.png' },
+                { id: 'easter-2', image: 'assets/images/frames/easter-2.png' },
+                { id: 'easter-3', image: 'assets/images/frames/easter-3.png' },
+                { id: 'valentine-1', image: 'assets/images/frames/valentine-1.png' },
+                { id: 'valentine-2', image: 'assets/images/frames/valentine-2.png' },
+                { id: 'valentine-3', image: 'assets/images/frames/valentine-3.png' },
+                { id: 'valentine-4', image: 'assets/images/frames/valentine-4.png' },
+            ],
+        }
+    },
+    created: function () {
+
+    },
+    methods: {
+
+    },
+    components: {
+        'event-lists': httpVueLoader(`${rootLink}/admin/components/eventLists.vue?v=1`),
+    }
+})
